@@ -65,9 +65,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## 用意したもの
 
-・php**
-・node.js**
-・bref**
-・serverless framework**
-・IAMユーザー**
+* php
+* node.js
+* bref
+* serverless framework
+* IAMユーザー
 
