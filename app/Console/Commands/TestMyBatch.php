@@ -11,7 +11,7 @@ class TestMyBatch extends Command
      *
      * @var string
      */
-    protected $signature = 'command:test';
+    protected $signature = 'command:test'; ← #　バッチの名前を書く
 
     /**
      * The console command description.
@@ -38,7 +38,7 @@ class TestMyBatch extends Command
     public function handle()
     {
 	 for ($i = 0; $i < 5; $i++) {
-		 echo "Hello✋";
+		 echo "Hello✋";　　　　　　　←実行する処理を記載この場合Helloが5回出力される。
 	 } 
         return 0;
     }
