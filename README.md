@@ -73,3 +73,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## phpのインストール
 
+```
+sudo amazon-linux-extras install php7.3
+
+php -v 
+PHP 7.3.33 (cli) (built: Aug 11 2022 19:55:12) ( NTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.33, Copyright (c) 1998-2018 Zend Technologies
+```
