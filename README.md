@@ -81,3 +81,10 @@ PHP 7.3.33 (cli) (built: Aug 11 2022 19:55:12) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.3.33, Copyright (c) 1998-2018 Zend Technologies
 ```
+
+##  node.jsをインストール
+```
+curl -fsSL https://rpm.nodesource.com/setup_16.x
+sudo yum install -y nodejs
+node -v
+```
