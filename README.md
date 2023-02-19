@@ -90,4 +90,76 @@ node -v
     v16.19.0
 ```
 
+## brefをインストール
+セットアップ用PHPスクリプトのダウンロード
+```
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+```
+composer-setup.php を実行して、Composer の実行ファイル(phar)を作成します
+セットアップ終了後、ls コマンドで composer.phar ができたことを確認します。
+```
+php composer-setup.php
+
+ls -l
+```
+セットアップスクリプト(composert-setup.php)は不要なので削除します
+```
+php -r "unlink('composer-setup.php');"
+```
+composer が利用できるようになったのかを確かめるため、作成された composer.phar を実行。
+```
+$ ./composer.phar -v
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.2.0 2016-07-19 01:28:52
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+      --no-plugins               Whether to disable plugins.
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+(以下略)
+```
+どこからでも(Globallyに)使えるようにするために、 /usr/local/bin フォルダに composer.phar を移動させる
+```
+mv composer.phar /usr/local/bin/composer
+```
+```
+$ composer
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.2.0 2016-07-19 01:28:52
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+      --no-plugins               Whether to disable plugins.
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+(以下略)
+```
+
 ## 
