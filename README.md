@@ -162,4 +162,8 @@ Options:
 (以下略)
 ```
 
-## 
+## serverless framework
+```
+npm install -g serverless
+serverless -v
+```
