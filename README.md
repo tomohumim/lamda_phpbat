@@ -70,6 +70,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * bref
 * serverless framework
 * IAMユーザー
+* Laravelプロジェックト作成
 
 ## phpのインストール
 
@@ -176,3 +177,17 @@ serverless config credentials --provider aws --key <key> --secret <secret>
 ```   
 cat ~/.aws/credentials
 ```
+## Laravelプロジェックト作成
+```
+$ composer create-project laravel/laravel bref-laravel-project
+$ cd bref-laravel-project
+```
+brefインストール
+```
+composer require bref/bref bref/laravel-bridge
+```
+serverless.yml 生成
+```
+php artisan vendor:publish --tag=serverless-config
+```
+serverless.ymlを編集する。
