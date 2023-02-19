@@ -166,5 +166,13 @@ Options:
 ```
 npm install -g serverless
 serverless -v
+```
+AWS アクセス キーを作成する
+iamのアクセスキーとシークレットキーを取得して入力する。
+```
 serverless config credentials --provider aws --key <key> --secret <secret>
+```
+設定されていることを確認する。
+```   
+cat ~/.aws/credentials
 ```
