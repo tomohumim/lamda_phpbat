@@ -166,4 +166,5 @@ Options:
 ```
 npm install -g serverless
 serverless -v
+serverless config credentials --provider aws --key <key> --secret <secret>
 ```
