@@ -138,6 +138,7 @@ composer require bref/bref bref/laravel-bridge
 laravelでバッチを作成する
 ```
 php artisan make:command [クラス名] 
+php artisan make:command TestMyBatch
 ```
 /app/Console/Commands/バッチを実行するファイルが生成される。
 今回は
