@@ -158,8 +158,10 @@ Available commands:
   schedule:run           Run the scheduled commands
   schedule:test          Run a scheduled command
 ```
-
-
+バッチを手動実行
+```
+php artisan command:test
+```
 serverless.ymlを編集する。
 
 
