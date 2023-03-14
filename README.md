@@ -184,7 +184,10 @@ export AWS_PROFILE="<iamユーザー>"
 ```
 シェルから抜けてしまうと元に戻るので.bash_profileなどに上記のコマンドを入れておくと良い。
 
-
+lamdaを削除するコマンド。
+```
+serverless remove
+```
 
 
 
