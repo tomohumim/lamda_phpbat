@@ -113,6 +113,17 @@ serverless config credentials --provider aws --key <key> --secret <secret>
 設定されていることを確認する。
 ```   
 cat ~/.aws/credentials
+
+[bref-cli]
+aws_access_key_id=xxxxxxxxxxx
+aws_secret_access_key=xxxxxxxxxxxxxxxx
+
+[default]
+aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxxx
+aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[lambda-test]
+aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxx
+aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxx
 ```
 ## Laravelプロジェックト作成
 ```
