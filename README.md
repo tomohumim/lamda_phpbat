@@ -144,7 +144,7 @@ php artisan make:command [クラス名]
 lamda_phpbat/app/Console/Commands/TestMyBatch.php
 <br>上記を作成。
 ```
-[ec2-user@ip-172-31-10-35 sample]$ php artisan |grep command
+ php artisan |grep command
   command [options] [arguments]
   -h, --help            Display help for the given command. When no command is given display help for the list command
       --env[=ENV]       The environment the command should run under
