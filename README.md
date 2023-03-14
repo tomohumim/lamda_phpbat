@@ -143,6 +143,21 @@ php artisan make:command [クラス名]
 今回は
 lamda_phpbat/app/Console/Commands/TestMyBatch.php
 <br>上記を作成。
+```
+[ec2-user@ip-172-31-10-35 sample]$ php artisan |grep command
+  command [options] [arguments]
+  -h, --help            Display help for the given command. When no command is given display help for the list command
+      --env[=ENV]       The environment the command should run under
+Available commands:
+  help                   Display help for a command
+  list                   List commands
+ command
+  command:test           Command description            ←実行したいバッチが登録されている
+  make:command           Create a new Artisan command
+  schedule:list          List the scheduled commands
+  schedule:run           Run the scheduled commands
+  schedule:test          Run a scheduled command
+```
 
 
 serverless.ymlを編集する。
