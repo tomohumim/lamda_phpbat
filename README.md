@@ -166,7 +166,13 @@ serverless.yml 生成
 ```
 php artisan vendor:publish --tag=serverless-config
 ```
-<br>上記を実施するとserverless.ymlと.serverlessフォルダーが生成される。
+<br>上記を実施するとserverless.ymlが生成される。
 <br>serverless.ymlを編集する。
+
+## AWSにデプロイ
+```
+serverless deploy
+```
+上記を実行するとseverless.ymlを参照し、.serverlessフォルダーが作成される。
 
 
