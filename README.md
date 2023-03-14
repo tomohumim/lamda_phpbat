@@ -139,6 +139,8 @@ laravelでバッチを作成する
 ```
 php artisan make:command [クラス名] 
 ```
+/app/Console/Commands/バッチを実行するファイルが生成される。
+今回は
 
 
 serverless.ymlを編集する。
