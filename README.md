@@ -162,6 +162,11 @@ Available commands:
 ```
 php artisan command:test
 ```
+serverless.yml 生成
+```
+php artisan vendor:publish --tag=serverless-config
+```
+<br>上記を実施するとserverless.ymlと.serverlessフォルダーが生成される。
 serverless.ymlを編集する。
 
 
