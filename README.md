@@ -134,9 +134,5 @@ brefインストール
 ```
 composer require bref/bref bref/laravel-bridge
 ```
-serverless.yml 生成
-```
-php artisan vendor:publish --tag=serverless-config
-```
 serverless.ymlを編集する。
 
