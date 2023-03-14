@@ -141,7 +141,8 @@ php artisan make:command [クラス名]
 ```
 /app/Console/Commands/バッチを実行するファイルが生成される。
 今回は
-lamda_phpbat/app/Console/Commands/TestMyBatch.php 
+lamda_phpbat/app/Console/Commands/TestMyBatch.php
+<br>上記を作成。
 
 
 serverless.ymlを編集する。
