@@ -178,7 +178,7 @@ serverless deploy
 cat ~/.aws/credentialsの一番上にあるiamユーザーを参照し、awsへデプロイする。
 今回の例だとbref-cliユーザーが存在するawsアカウントにlamdaがデプロイされる。
 別アカウントのawsにあげたい場合は別のawsアカウントにiamユーザーを作成する。
-<br>exportコマンドでiamユーザーを指定してデプロイを実行する。
+<br>exportコマンドで作成したiamユーザーを指定してデプロイを実行する。
 ```
 export AWS_PROFILE="<iamユーザー>"
 ```
