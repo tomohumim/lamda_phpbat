@@ -134,5 +134,13 @@ brefインストール
 ```
 composer require bref/bref bref/laravel-bridge
 ```
+
+laravelでバッチを作成する
+```
+php artisan make:command [クラス名] 
+```
+
+
 serverless.ymlを編集する。
+
 
